@@ -41,6 +41,7 @@ int calcMark(std::string level) {
         mark = 58;
     } else if (level == "1-") {
         mark = 51;
+    // If the user's level is invalid
     } else {
         mark = -1;
     }

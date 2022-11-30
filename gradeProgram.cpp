@@ -42,7 +42,7 @@ int calcMark(std::string level) {
     } else if (level == "1-") {
         mark = 51;
     } else {
-        mark = 0;
+        mark = -1;
     }
 
     // Returns the mark value to function call
@@ -61,7 +61,7 @@ int main() {
     int userMark = calcMark(userLevel);
 
     // IF the user entered an invalid input
-    if (userMark == 0) {
+    if (userMark == -1) {
         std::cout << userLevel << " is not a valid input for the level!"
         << std::endl;
     // IF the level input is valid
